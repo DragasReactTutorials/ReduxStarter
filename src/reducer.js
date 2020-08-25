@@ -7,7 +7,8 @@ let lastId = 0;
 // a function with two parameters:
 // state, action
 // the reducer's job is to return an updated state
-function reducer(state = [], action){
+// we export the reducer to we can use it when we build our store
+export default function reducer(state = [], action){
     // in the beginning, our state is undefined
     // the action will be dispatched with undefined state
     // if that happens, we have to return an initial state - we can do
